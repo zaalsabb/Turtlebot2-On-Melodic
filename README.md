@@ -16,13 +16,14 @@ Firstly, `cd` to your catkin workspace.
 If you don't have one, `cd` to somewhere you want to create it, and then run the following commands to create one
 ```
 mkdir -p src
-catkin_make
+catkin init
 ```
 
 Now run the following command (inside the root of catkin workspace) to build up running environment for Turtlebot2
 ```
 curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
-catkin_make
+sudo apt-get install ros-$ROS_DISTRO-laptop-battery-monitor
+catkin build
 ```
 
 ## Bring Up Turtlebot2
